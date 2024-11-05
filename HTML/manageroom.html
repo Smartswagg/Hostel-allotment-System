@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management</title>
+  <link rel="stylesheet" href="manageroom.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Hostel Management System</h2>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="availablerms.html">Available Rooms</a></li>
+          <li><a href="#">Manage Requests</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main class="main-content">
+      <a href="adminaccount.html" class="account-link">
+        <div class="account">
+          <div class="account-icon">
+            <i>👤</i>
+          </div>
+            <span>Admin</span>
+        </div>
+    </a>
+      <section class="content">
+        <h3>Manage Room Requests</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Department</th>
+              <th>Preferred Block</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>John Doe</strong><br>
+                Semester 4
+              </td>
+              <td>Computer Science</td>
+              <td>Block A (1 rooms available)</td>
+              <td class="status pending">Pending</td>
+              <td>
+                <button class="approve">Approve</button>
+                <button class="reject">Reject</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Jane Smith</strong><br>
+                Semester 3
+              </td>
+              <td>Physics</td>
+              <td>Block B (1 rooms available)</td>
+              <td class="status approved">Approved</td>
+              <td>
+                <button class="approve">Approve</button>
+                <button class="reject">Reject</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
