@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Account Link Outside Navbar */
+.account-link {
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+}
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #007bff;
+}
+.account i {
+    font-size: 30px;
+}
+.account span {
+    font-size: 18px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial {
+    max-width: 980px;
+    width: 50%;
+    position: relative;
+}
+.testimonial .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.testimonial .slide {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide.active {
+    display: flex;
+}
+.slide h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+.request-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.request-button:hover {
+    background-color: #0056b3;
+}
+.nav-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+.left-arrow {
+    left: -45px;
+}
+.right-arrow {
+    right: -45px;
+}
+.nav-arrow:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .testimonial .image {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    .account i {
+        font-size: 24px;
+    }
+}

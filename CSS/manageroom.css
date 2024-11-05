@@ -1,0 +1,128 @@
+* { margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif; 
+}
+body { background-color: #f7f7f9; 
+}
+
+.container { display: flex; 
+  min-height: 100vh; 
+}
+
+.sidebar { width: 250px; 
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+}
+
+.sidebar h2 { font-size: 25px; 
+  margin-bottom: 30px; 
+}
+
+.sidebar nav ul {
+   list-style: none; 
+  }
+
+.sidebar nav ul li {
+   margin-bottom: 21px; 
+  }
+
+.sidebar nav ul li a {
+   color: white; 
+   text-decoration: none; 
+   font-size: 16px; }
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+   text-decoration: underline; 
+  }
+
+.main-content { flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.header { color: white; 
+  padding: 15px 20px; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+.header span {
+   font-size: 16px; 
+  }
+
+.content {
+   padding: 20px;
+   margin-top: 40px; 
+  }
+
+.content h3 {
+   font-size: 24px; 
+   margin-bottom: 20px; 
+  }
+
+table { width: 100%;
+   border-collapse: collapse;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+table thead th 
+{ text-align: left;
+   padding: 15px; 
+   background-color: #f2f2f2; 
+  }
+
+table tbody td { padding: 15px;
+   border-bottom: 1px solid #e0e0e0; 
+  }
+
+.status 
+{ font-weight: bold;
+ }
+
+.status.pending {
+   color: #f0a500; 
+  }
+
+.status.approved { 
+  color: #3dbd3d; 
+}
+
+button { padding: 8px 12px;
+   border: none; 
+   border-radius: 4px; 
+   cursor: pointer; 
+   font-size: 14px; 
+  }
+
+button.approve { background-color: #4caf50;
+   color: white; 
+   margin-right: 5px; 
+  }
+
+button.reject {
+   background-color: #f44336; 
+   color: white; 
+  }
+
+.account { 
+  position: fixed; 
+  top: 20px; 
+  right: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 0; 
+  z-index: 1000;
+ }
+
+.account .icon {
+   width: 23px; 
+   height: 23px; 
+   border-radius: 50%; 
+   background-color: #ddd; 
+   margin-right: 10px; 
+  }
