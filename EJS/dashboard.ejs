@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management System</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: #fff;
+      width: 200px;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 10px 0;
+    }
+
+    .sidebar li a {
+      color: #f3efef;
+      text-decoration: none;
+    }
+
+    .sidebar li a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .dashboard-item {
+      background-color: #f0f0f0;
+      padding: 60px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .dashboard-item h5 {
+      margin-top: 0;
+    }
+
+    .dashboard-item .count {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .dashboard-item .see-all {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #5fca45;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .dashboard-item .see-all:hover {
+      background-color: #ccc;
+    }
+
+  .account { 
+  position: fixed; 
+  top: 20px; 
+  right: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 0; 
+  z-index: 1000;
+ }
+
+.account .icon {
+   width: 23px; 
+   height: 23px; 
+   border-radius: 50%; 
+   background-color: #ddd; 
+   margin-right: 10px; 
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Hostel Management System</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="availablerms.html">Available Rooms</a></li>
+        <li><a href="manageroom.html">Manage Requests</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <a href="adminaccount.html" class="account-link">
+        <div class="account">
+          <div class="account-icon">
+            <i>👤</i>
+          </div>
+            <span>Admin</span>
+        </div>
+    </a>
+      <h1>Dashboard</h1>
+      <div class="dashboard">
+        <div class="dashboard-item">
+          <h3>Students</h3>
+          <div class="count">5</div>
+          <a href="#" class="see-all">FULL DETAIL →</a>
+        </div>
+        <div class="dashboard-item">
+          <h3>Total Rooms</h3>
+          <div class="count">6</div>
+          <a href="#" class="see-all">SEE ALL →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
